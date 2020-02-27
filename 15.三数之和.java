@@ -7,7 +7,7 @@
 // @lc code=start
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-
+hjdhajadsj hhj
     }
 }
 // @lc code=end
