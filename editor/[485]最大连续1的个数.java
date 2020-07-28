@@ -29,9 +29,8 @@ class Solution {
                 max = Math.max(count, max);
                 count = 0;
             }
-            max = Math.max(count, max);
         }
-        return max;
+        return Math.max(count, max);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
