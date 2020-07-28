@@ -1,68 +1,56 @@
 package test;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * @author Vigilr
  * @since 2020-07-28
  */
 public class Solution {
-    public int maxDepth(TreeNode root) {
-        //递归方法
-//        return root == null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
-        //广度优先搜索
-        if (root == null) {
-            return 0;
-        } else {
-            Queue<TreeNode> queue = new LinkedList<>();
-            queue.offer(root);
-            int ans = 0;
-            while (!queue.isEmpty()) {
-                int size = queue.size();
-                while (size > 0) {
-                    TreeNode node = queue.remove();
-                    if (node.left != null) {
-                        queue.offer(node.left);
-                    }
-                    if (node.right != null) {
-                        queue.offer(node.right);
-                    }
-                    size--;
-                }
-                ans++;
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode p = l1, q = l2, curr = dummyHead;
+        int carry = 0;
+        while (p != null || q != null) {
+            int x = (p != null) ? p.val : 0;
+            int y = (q != null) ? q.val : 0;
+            int sum = carry + x + y;
+            carry = sum / 10;
+            curr.next = new ListNode(sum % 10);
+            curr = curr.next;
+            if (p != null) {
+                p = p.next;
             }
-            return ans;
-        }
-
-    }
-
-    public int findMaxConsecutiveOnes(int[] nums) {
-        int count = 0, max = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 1) {
-                count++;
-            } else {
-                max = Math.max(count, max);
-                count = 0;
+            if (q != null) {
+                q = q.next;
             }
         }
-        return max;
+        if (carry > 0) {
+            curr.next = new ListNode(carry);
+        }
+        return dummyHead.next;
     }
+
 
     public static void main(String[] args) {
-        int[] nums=new int[]{1};
-        Solution solution=new Solution();
-        System.out.println(solution.findMaxConsecutiveOnes(nums));
+        Solution solution = new Solution();
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+        ListNode l3 = solution.addTwoNumbers(l1, l2);
+        System.out.println(l3.val);
+        System.out.println(l3.next.val);
+        System.out.println(l3.next.next.val);
     }
 }
 
-class TreeNode {
+class ListNode {
     int val;
-    TreeNode left;
-    TreeNode right;
+    ListNode next;
 
-    TreeNode(int x) {
+    ListNode(int x) {
         val = x;
     }
 }
