@@ -21,17 +21,12 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
-        //双指针
-        int left = 0, right = numbers.length - 1;
-        while (left < right) {
-            int sum = numbers[left] + numbers[right];
-            if (sum == target) {
-                return new int[]{left + 1, right + 1};
-            } else if (sum > target) {
-                right--;
-            } else {
-                left++;
+        Map<Integer, Integer> map = new HashMap<>(numbers.length);
+        for (int i = 0; i < numbers.length; i++) {
+            if (map.get(target - numbers[i]) != null) {
+                return new int[]{map.get(target - numbers[i]) + 1, i + 1};
             }
+            map.put(numbers[i], i);
         }
         return new int[]{0, 0};
     }
