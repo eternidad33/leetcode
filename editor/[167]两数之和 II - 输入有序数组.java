@@ -21,20 +21,19 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
-        for (int i = 0; i < numbers.length; i++) {
-            int left = i + 1, right = numbers.length - 1;
-            while (left <= right) {
-                int mid = (right - left) / 2 + left;
-                if (numbers[mid] == target - numbers[i]) {
-                    return new int[]{i + 1, mid + 1};
-                } else if (numbers[mid] > target - numbers[i]) {
-                    right = mid - 1;
-                } else {
-                    left = mid + 1;
-                }
+        //双指针
+        int left = 0, right = numbers.length - 1;
+        while (left < right) {
+            int sum = numbers[left] + numbers[right];
+            if (sum == target) {
+                return new int[]{left + 1, right + 1};
+            } else if (sum > target) {
+                right--;
+            } else {
+                left++;
             }
         }
-        return new int[]{-1, -1};
+        return new int[]{0, 0};
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
