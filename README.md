@@ -1,5 +1,5 @@
-<p align='right'>
-<a href='https://gitee.com/eternidad33/leetcode'><img src='https://gitee.com/eternidad33/leetcode/widgets/widget_1.svg' alt='Fork me on Gitee'></img></a></p>
+<p align='center'>
+<a href='https://gitee.com/eternidad33/leetcode'><img src='https://gitee.com/eternidad33/leetcode/widgets/widget_6.svg' alt='Fork me on Gitee'></img></a></p>
 
 # LeetCode刷题
 
