@@ -1,7 +1,6 @@
 package main;
 
-import java.util.Arrays;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * @author Vigilr
@@ -21,6 +20,22 @@ public class Solution {
             j--;
         }
         return stringBuffer.reverse().toString();
+    }
+
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        //初始化HashMap
+        HashMap<Integer, Boolean> hashMap = new HashMap<>();
+        for (int num : nums) {
+            hashMap.put(num, true);
+        }
+        //list用于存储哈希表中不存在的元素
+        List<Integer> list = new LinkedList<>();
+        for (int i = 1; i <= nums.length; i++) {
+            if (!hashMap.containsKey(i)) {
+                list.add(i);
+            }
+        }
+        return list;
     }
 
     public static void main(String[] args) {
