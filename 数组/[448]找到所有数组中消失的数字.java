@@ -20,16 +20,16 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        //初始化HashMap
-        HashMap<Integer, Boolean> hashMap = new HashMap<>();
-        for (int num : nums) {
-            hashMap.put(num, true);
+        for (int i = 0; i < nums.length; i++) {
+            int newIndex = Math.abs(nums[i]) - 1;
+            if (nums[newIndex] > 0) {
+                nums[newIndex] *= -1;
+            }
         }
-        //list用于存储哈希表中不存在的元素
         List<Integer> list = new LinkedList<>();
-        for (int i = 1; i <= nums.length; i++) {
-            if (!hashMap.containsKey(i)) {
-                list.add(i);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                list.add(i + 1);
             }
         }
         return list;
