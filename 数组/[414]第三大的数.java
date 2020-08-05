@@ -36,9 +36,10 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int thirdMax(int[] nums) {        if (nums.length == 0 || nums == null) {
-        throw new RuntimeException("Error");
-    }
+    public int thirdMax(int[] nums) {
+        if (nums.length == 0 || nums == null) {
+            throw new RuntimeException("Error");
+        }
         TreeSet<Integer> set = new TreeSet<>();
         for (int num : nums) {
             set.add(num);
