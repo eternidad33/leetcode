@@ -18,8 +18,6 @@ Python 刷题顺序：按照 Leetcode 上的 LeetBook 的顺序刷题
 - [ ] 前缀树
 - [ ] N 叉树
 
-![数据结构leetbook](https://gitee.com/eternidad33/picbed/raw/master/img/QQ%E6%88%AA%E5%9B%BE20200810200122.png)
-
 **算法**
 
 - [ ] 初级算法
@@ -29,8 +27,6 @@ Python 刷题顺序：按照 Leetcode 上的 LeetBook 的顺序刷题
 - [ ] 二分查找
 - [ ] 查找表类算法
 - [ ] 算法面试题汇总
-
-![算法leetbook](https://gitee.com/eternidad33/picbed/raw/master/img/QQ%E6%88%AA%E5%9B%BE20200810200415.png)
 
 > 计划到明年6月份毕业之前刷完
 
