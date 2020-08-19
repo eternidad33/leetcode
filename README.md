@@ -12,7 +12,7 @@
 
 ### 刷题计划
 
-参照 Leetcode 上的[有没有人一起从零开始刷力扣](https://leetcode-cn.com/circle/article/48kq9d/)这篇文章进行刷题
+参照 Leetcode 上的[《有没有人一起从零开始刷力扣》](https://leetcode-cn.com/circle/article/48kq9d/)这篇文章进行刷题
 
 - [ ] 数组
 - [ ] 字符串
