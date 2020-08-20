@@ -7,10 +7,37 @@
 
 - 🌴 本仓库用于记录 leetcode 刷题
 - 👋 [leetcode 个人主页](https://leetcode-cn.com/u/eternidad/) ，欢迎关注
-- 🚀 master 分支用于记录 [Java 刷题](https://gitee.com/eternidad33/leetcode)
-- 🔥 python 分支用于记录 [Python 刷题](https://gitee.com/eternidad33/leetcode/tree/python/)
+- 🚀 计划每天刷一道题
+- 🔥 ~~可能计划赶不上变化~~
 
-### 刷题计划
+### Python刷题计划
+
+刷题顺序：按照 Leetcode 上的 LeetBook 的顺序刷题
+
+先做数据结构然后再做算法
+
+**数据结构**
+
+- [ ] 数组和字符串
+- [ ] 链表
+- [ ] 队列 & 栈
+- [ ] 哈希表
+- [ ] 二叉树
+- [ ] 二叉搜索树
+- [ ] 前缀树
+- [ ] N 叉树
+
+**算法**
+
+- [ ] 初级算法
+- [ ] 中级算法
+- [ ] 高级算法
+- [ ] 数组类算法
+- [ ] 二分查找
+- [ ] 查找表类算法
+- [ ] 算法面试题汇总
+
+### Java刷题计划
 
 参照 Leetcode 上的[《有没有人一起从零开始刷力扣》](https://leetcode-cn.com/circle/article/48kq9d/)这篇文章进行刷题
 
