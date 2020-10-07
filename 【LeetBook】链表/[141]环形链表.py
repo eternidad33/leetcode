@@ -67,12 +67,21 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        while head is not None:
-            if head == head.next:
+        # while head is not None:
+        #     if head == head.next:
+        #         return True
+        #     if head.next is not None:
+        #         head.next = head.next.next
+        #     head = head.next
+        # return False
+        hashSet = set()
+        node = head
+        while node is not None:
+            if node in hashSet:
                 return True
-            if head.next is not None:
-                head.next = head.next.next
-            head = head.next
+            else:
+                hashSet.add(node)
+                node = node.next
         return False
 
 # leetcode submit region end(Prohibit modification and deletion)
