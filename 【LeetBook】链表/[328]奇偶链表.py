@@ -39,14 +39,15 @@ class Solution(object):
         """
         if head is None:
             return None
-        odd, even = head, head.next
-        evenHead = even
-        while even is not None and even.next is not None:
-            odd.next = even.next
-            odd = odd.next
+        even, odd = head, head.next
+        # 偶数编号的第一个节点
+        oddHead = odd
+        while odd is not None and odd.next is not None:
             even.next = odd.next
             even = even.next
-        odd.next = evenHead
+            odd.next = even.next
+            odd = odd.next
+        even.next = oddHead
         return head
 
 # leetcode submit region end(Prohibit modification and deletion)
