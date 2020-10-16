@@ -16,19 +16,14 @@ class Solution(object):
         :type T: List[int]
         :rtype: List[int]
         """
-        if not T or len(T) == 0:
-            return None
-        ans = []
-        n = len(T)
-
-        for i in range(n):
-            b = False
-            for j in range(i + 1, n):
-                if T[j] > T[i]:
-                    ans.append(j - i)
-                    b = True
-                    break
-            if not b:
-                ans.append(0)
+        length = len(T)
+        ans = [0] * length
+        stack = []
+        for i in range(length):
+            temperature = T[i]
+            while stack and temperature > T[stack[-1]]:
+                prev_index = stack.pop()
+                ans[prev_index] = i - prev_index
+            stack.append(i)
         return ans
 # leetcode submit region end(Prohibit modification and deletion)
