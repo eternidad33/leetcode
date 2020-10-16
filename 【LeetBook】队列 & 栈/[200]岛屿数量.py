@@ -33,7 +33,6 @@
 #  Related Topics 深度优先搜索 广度优先搜索 并查集 
 #  👍 800 👎 0
 
-
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution(object):
     def numIslands(self, grid):
