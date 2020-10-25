@@ -18,8 +18,16 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __
+from typing import List
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         def medium(root, res):
@@ -32,5 +40,5 @@ class Solution:
         res = []
         medium(root, res)
         return res
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
