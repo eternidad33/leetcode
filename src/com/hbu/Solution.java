@@ -1,14 +1,12 @@
 package com.hbu;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
 
     }
+
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
@@ -30,6 +28,37 @@ public class Solution {
             ans[i - k + 1] = pq.peek()[0];
         }
         return ans;
+    }
+
+    public int calPoints(String[] ops) {
+        Stack<Integer> stack = new Stack<>();
+        for (String op : ops) {
+            if (op.equals("+")) {
+                // 1.+，取出一个栈顶元素top
+                // 2.将该栈顶元素与取出后的栈顶元素相加得到newTop
+                // 3.将top，newTop依次入栈
+                int top = stack.pop();
+                int newTop = top + stack.peek();
+                stack.push(top);
+                stack.push(newTop);
+            } else if (op.equals("C")) {
+                // C，失效，直接出栈
+                stack.pop();
+            } else if (op.equals("D")) {
+                // D，栈顶元素的两倍入栈
+                stack.push(2 * stack.peek());
+            } else {
+                // 数字直接入栈
+                stack.push(Integer.valueOf(op));
+            }
+        }
+
+        // 求栈中所有元素的和
+        int sum = 0;
+        for (int s : stack) {
+            sum += s;
+        }
+        return sum;
     }
 
 }
