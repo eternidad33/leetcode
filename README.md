@@ -59,7 +59,7 @@
 - [ ] 计算几何
 - [ ] 常用技巧与算法
 
-**刷题顺序**
+### 刷题顺序
 
 ![1-9](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/2021010521.jpg)
 
