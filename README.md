@@ -59,6 +59,12 @@
 - [ ] 计算几何
 - [ ] 常用技巧与算法
 
+**刷题顺序**
+
+![1-9](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/2021010521.jpg)
+
+![10-17](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/2021010549.jpg)
+
 > 计划到明年 6 月份毕业之前刷完
 
 ---
