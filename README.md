@@ -61,9 +61,23 @@
 
 ### 刷题顺序
 
-![1-9](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/2021010521.jpg)
+如下为Java刷题顺序
 
-![10-17](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/2021010549.jpg)
+#### 第一部分
+
+![1-5](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/0105.png)
+
+#### 第二部分
+
+![6-10](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/0610.png)
+
+#### 第三部分
+
+![11-15](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/1115.png)
+
+#### 第四部分
+
+![16-17](https://cdn.jsdelivr.net/gh/eternidad33/picbed@master/img/1617.png)
 
 > 计划到明年 6 月份毕业之前刷完
 
