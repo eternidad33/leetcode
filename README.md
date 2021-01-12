@@ -19,8 +19,8 @@
 - [x] 剑指 Offer 03	    [数组中重复的数字](/剑指Offer/剑指Offer03数组中重复的数字.java)
 - [x] 剑指 Offer 04	    [二维数组中的查找](/剑指Offer/剑指Offer04二维数组中的查找.java)
 - [x] 剑指 Offer 05	    [替换空格](/剑指Offer/剑指Offer05替换空格.java)
-- [ ] 剑指 Offer 06	    从尾到头打印链表
-- [ ] 剑指 Offer 07	    重建二叉树
+- [ ] 剑指 Offer 06	    [从尾到头打印链表](/剑指Offer/剑指Offer06从尾到头打印链表.java)
+- [ ] 剑指 Offer 07	    [重建二叉树](/剑指Offer/剑指Offer07重建二叉树.java)
 - [ ] 剑指 Offer 09	    用两个栈实现队列
 - [ ] 剑指 Offer 10- I	斐波那契数列
 - [ ] 剑指 Offer 10- II	青蛙跳台阶问题
