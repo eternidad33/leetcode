@@ -23,8 +23,8 @@
 - [x] 剑指 Offer 07 [重建二叉树](/剑指Offer/剑指Offer07重建二叉树.java)
 - [x] 剑指 Offer 09 [用两个栈实现队列](/剑指Offer/剑指Offer09用两个栈实现队列.java)
 - [x] 剑指 Offer 10- I [斐波那契数列](/剑指Offer/剑指Offer10-I斐波那契数列.java)
-- [ ] 剑指 Offer 10- II 青蛙跳台阶问题
-- [ ] 剑指 Offer 11 旋转数组的最小数字
+- [x] 剑指 Offer 10- II [青蛙跳台阶问题](/剑指Offer/剑指Offer10-II青蛙跳台阶问题.java)
+- [x] 剑指 Offer 11 [旋转数组的最小数字](/剑指Offer/剑指Offer11旋转数组的最小数字.java)
 - [ ] 剑指 Offer 12 矩阵中的路径
 - [ ] 剑指 Offer 13 机器人的运动范围
 - [ ] 剑指 Offer 14- I 剪绳子
