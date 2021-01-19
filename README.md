@@ -29,9 +29,9 @@
 - [x] 剑指 Offer 13 [机器人的运动范围](/剑指Offer/剑指Offer13机器人的运动范围.java)
 - [x] 剑指 Offer 14- I [剪绳子](/剑指Offer/剑指Offer14-I剪绳子.java)
 - [x] 剑指 Offer 14- II [剪绳子 II](/剑指Offer/剑指Offer14-II剪绳子II.java)
-- [ ] 剑指 Offer 15 二进制中1的个数
-- [ ] 剑指 Offer 16 数值的整数次方
-- [ ] 剑指 Offer 17 打印从1到最大的n位数
+- [x] 剑指 Offer 15 [二进制中1的个数](/剑指Offer/剑指Offer15二进制中1的个数.java)
+- [x] 剑指 Offer 16 [数值的整数次方](剑指Offer/剑指Offer16数值的整数次方.java)
+- [x] 剑指 Offer 17 [打印从1到最大的n位数](剑指Offer/剑指Offer17打印从1到最大的n位数.java)
 - [ ] 剑指 Offer 18 删除链表的节点
 - [ ] 剑指 Offer 19 正则表达式匹配
 - [ ] 剑指 Offer 20 表示数值的字符串
