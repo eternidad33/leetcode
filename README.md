@@ -34,7 +34,7 @@
 - [x] 剑指 Offer 17 [打印从1到最大的n位数](剑指Offer/剑指Offer17打印从1到最大的n位数.java)
 - [x] 剑指 Offer 18 [删除链表的节点](剑指Offer/剑指Offer18删除链表的节点.java)
 - [x] 剑指 Offer 19 [正则表达式匹配](剑指Offer/剑指Offer19正则表达式匹配.java)
-- [ ] 剑指 Offer 20 表示数值的字符串
+- [x] 剑指 Offer 20 [表示数值的字符串](剑指Offer/剑指Offer20表示数值的字符串.java)
 - [ ] 剑指 Offer 21 调整数组顺序使奇数位于偶数前面
 - [ ] 剑指 Offer 22 链表中倒数第k个节点
 - [ ] 剑指 Offer 24 反转链表
