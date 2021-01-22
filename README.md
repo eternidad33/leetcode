@@ -40,10 +40,10 @@
 - [x] 剑指 Offer 24 [反转链表](剑指Offer/剑指Offer24反转链表.java)
 - [x] 剑指 Offer 25 [合并两个排序的链表](剑指Offer/剑指Offer25合并两个排序的链表.java)
 - [x] 剑指 Offer 26 [树的子结构](剑指Offer/剑指Offer26树的子结构.java)
-- [ ] 剑指 Offer 27 二叉树的镜像
-- [ ] 剑指 Offer 28 对称的二叉树
-- [ ] 剑指 Offer 29 顺时针打印矩阵
-- [ ] 剑指 Offer 30 包含min函数的栈
+- [x] 剑指 Offer 27 [二叉树的镜像](剑指Offer/剑指Offer27二叉树的镜像.java)
+- [x] 剑指 Offer 28 [对称的二叉树](剑指Offer/剑指Offer28对称的二叉树.java)
+- [x] 剑指 Offer 29 [顺时针打印矩阵](剑指Offer/剑指Offer29顺时针打印矩阵.java)
+- [x] 剑指 Offer 30 [包含min函数的栈](剑指Offer/剑指Offer30包含min函数的栈.java)
 - [ ] 剑指 Offer 31 栈的压入、弹出序列
 - [ ] 剑指 Offer 32 - I 从上到下打印二叉树
 - [ ] 剑指 Offer 32 - II 从上到下打印二叉树 II
