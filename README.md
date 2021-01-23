@@ -44,10 +44,10 @@
 - [x] 剑指 Offer 28 [对称的二叉树](剑指Offer/剑指Offer28对称的二叉树.java)
 - [x] 剑指 Offer 29 [顺时针打印矩阵](剑指Offer/剑指Offer29顺时针打印矩阵.java)
 - [x] 剑指 Offer 30 [包含min函数的栈](剑指Offer/剑指Offer30包含min函数的栈.java)
-- [ ] 剑指 Offer 31 栈的压入、弹出序列
-- [ ] 剑指 Offer 32 - I 从上到下打印二叉树
-- [ ] 剑指 Offer 32 - II 从上到下打印二叉树 II
-- [ ] 剑指 Offer 32 - III 从上到下打印二叉树 III
+- [x] 剑指 Offer 31 [栈的压入、弹出序列](剑指Offer/剑指Offer31栈的压入、弹出序列.java)
+- [x] 剑指 Offer 32 - I [从上到下打印二叉树](剑指Offer/剑指Offer32-I从上到下打印二叉树.java)
+- [x] 剑指 Offer 32 - II [从上到下打印二叉树 II](剑指Offer/剑指Offer32-II从上到下打印二叉树II.java)
+- [x] 剑指 Offer 32 - III [从上到下打印二叉树 III](剑指Offer/剑指Offer32-III从上到下打印二叉树III.java)
 - [ ] 剑指 Offer 33 二叉搜索树的后序遍历序列
 - [ ] 剑指 Offer 34 二叉树中和为某一值的路径
 - [ ] 剑指 Offer 35 复杂链表的复制
