@@ -163,5 +163,16 @@
 
 ---
 
+### 周赛排名
+
+|                             名称                             |   排名    | 得分 | 完成时间 |   题目1   | 题目2 | 题目3 | 题目4 | 比赛日期  |
+| :----------------------------------------------------------: | :-------: | :--: | :------: | :-------: | :---: | :---: | :---: | :-------: |
+| [第 44 场双周赛](https://leetcode-cn.com/contest/biweekly-contest-44/) | 1178/1826 |  3   | 0:19:42  | 0:09:42😡2 |       |       |       | 2021/1/23 |
+| [第 225 场周赛](https://leetcode-cn.com/contest/weekly-contest-225/) | 2345/3851 |  3   | 0:38:37  | 0:33:37😡1 |       |       |       | 2021/1/24 |
+
+
+
+---
+
 <p align='center'>
 <a href='https://gitee.com/eternidad33/leetcode'><img src='https://gitee.com/eternidad33/leetcode/widgets/widget_card.svg?colors=393222,ebdfc1,fffae5,d8ca9f,393222,a28b40' alt='一念成魔/LeetCode刷题'></img></a></p>
