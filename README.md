@@ -48,8 +48,8 @@
 - [x] 剑指 Offer 32 - I [从上到下打印二叉树](剑指Offer/剑指Offer32-I从上到下打印二叉树.java)
 - [x] 剑指 Offer 32 - II [从上到下打印二叉树 II](剑指Offer/剑指Offer32-II从上到下打印二叉树II.java)
 - [x] 剑指 Offer 32 - III [从上到下打印二叉树 III](剑指Offer/剑指Offer32-III从上到下打印二叉树III.java)
-- [ ] 剑指 Offer 33 [二叉搜索树的后序遍历序列](剑指Offer/剑指Offer33二叉搜索树的后序遍历序列.java)
-- [ ] 剑指 Offer 34 [二叉树中和为某一值的路径](剑指Offer/剑指Offer34二叉树中和为某一值的路径.java)
+- [x] 剑指 Offer 33 [二叉搜索树的后序遍历序列](剑指Offer/剑指Offer33二叉搜索树的后序遍历序列.java)
+- [x] 剑指 Offer 34 [二叉树中和为某一值的路径](剑指Offer/剑指Offer34二叉树中和为某一值的路径.java)
 - [ ] 剑指 Offer 35 复杂链表的复制
 - [ ] 剑指 Offer 36 二叉搜索树与双向链表
 - [ ] 剑指 Offer 37 序列化二叉树
