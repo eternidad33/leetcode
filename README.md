@@ -52,7 +52,7 @@
 - [x] 剑指 Offer 34 [二叉树中和为某一值的路径](剑指Offer/剑指Offer34二叉树中和为某一值的路径.java)
 - [x] 剑指 Offer 35 [复杂链表的复制](剑指Offer/剑指Offer35复杂链表的复制.java)
 - [x] 剑指 Offer 36 [二叉搜索树与双向链表](剑指Offer/剑指Offer36二叉搜索树与双向链表.java)
-- [ ] 剑指 Offer 37 序列化二叉树
+- [x] 剑指 Offer 37 [序列化二叉树](剑指Offer/剑指Offer37序列化二叉树.java)
 - [ ] 剑指 Offer 38 字符串的排列
 - [ ] 剑指 Offer 39 数组中出现次数超过一半的数字
 - [ ] 剑指 Offer 40 最小的k个数
