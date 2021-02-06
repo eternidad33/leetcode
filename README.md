@@ -71,12 +71,12 @@
 - [x] 剑指 Offer 53 - I [在排序数组中查找数字 I](剑指Offer/剑指Offer53-I在排序数组中查找数字I.java)
 - [x] 剑指 Offer 53 - II [0～n-1中缺失的数字](剑指Offer/剑指Offer53-II0～n-1中缺失的数字.java)
 - [x] 剑指 Offer 54 [二叉搜索树的第k大节点](剑指Offer/剑指Offer54二叉搜索树的第k大节点.java)
-- [ ] 剑指 Offer 55 - I 二叉树的深度
-- [ ] 剑指 Offer 55 - II 平衡二叉树
+- [x] 剑指 Offer 55 - I [二叉树的深度](剑指Offer/剑指Offer55-I二叉树的深度.java)
+- [x] 剑指 Offer 55 - II [平衡二叉树](剑指Offer/剑指Offer55-II平衡二叉树.java)
 - [ ] 剑指 Offer 56 - I 数组中数字出现的次数
 - [ ] 剑指 Offer 56 - II 数组中数字出现的次数 II
-- [ ] 剑指 Offer 57 和为s的两个数字
-- [ ] 剑指 Offer 57 - II 和为s的连续正数序列
+- [x] 剑指 Offer 57 [和为s的两个数字](剑指Offer/剑指Offer57和为s的两个数字.java)
+- [x] 剑指 Offer 57 - II [和为s的连续正数序列](剑指Offer/剑指Offer57-II和为s的连续正数序列.java)
 - [ ] 剑指 Offer 58 - I 翻转单词顺序
 - [ ] 剑指 Offer 58 - II 左旋转字符串
 - [ ] 剑指 Offer 59 - I 滑动窗口的最大值
