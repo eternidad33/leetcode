@@ -77,20 +77,20 @@
 - [ ] 剑指 Offer 56 - II 数组中数字出现的次数 II
 - [x] 剑指 Offer 57 [和为s的两个数字](剑指Offer/剑指Offer57和为s的两个数字.java)
 - [x] 剑指 Offer 57 - II [和为s的连续正数序列](剑指Offer/剑指Offer57-II和为s的连续正数序列.java)
-- [ ] 剑指 Offer 58 - I 翻转单词顺序
-- [ ] 剑指 Offer 58 - II 左旋转字符串
-- [ ] 剑指 Offer 59 - I 滑动窗口的最大值
+- [x] 剑指 Offer 58 - I [翻转单词顺序](剑指Offer/剑指Offer58-I翻转单词顺序.java)
+- [x] 剑指 Offer 58 - II [左旋转字符串](剑指Offer/剑指Offer58-II左旋转字符串.java)
+- [x] 剑指 Offer 59 - I [滑动窗口的最大值](剑指Offer/剑指Offer59-I滑动窗口的最大值.java)
 - [ ] 剑指 Offer 59 - II 队列的最大值
 - [ ] 剑指 Offer 60 n个骰子的点数
-- [ ] 剑指 Offer 61 扑克牌中的顺子
-- [ ] 剑指 Offer 62 圆圈中最后剩下的数字
+- [x] 剑指 Offer 61 [扑克牌中的顺子](剑指Offer/剑指Offer61扑克牌中的顺子.java)
+- [x] 剑指 Offer 62 [圆圈中最后剩下的数字](剑指Offer/剑指Offer62圆圈中最后剩下的数字.java)
 - [ ] 剑指 Offer 63 股票的最大利润
 - [ ] 剑指 Offer 64 求1+2+…+n
-- [ ] 剑指 Offer 65 不用加减乘除做加法
+- [x] 剑指 Offer 65 [不用加减乘除做加法](剑指Offer/剑指Offer65不用加减乘除做加法.java)
 - [ ] 剑指 Offer 66 构建乘积数组
 - [ ] 剑指 Offer 67 把字符串转换成整数
-- [ ] 剑指 Offer 68 - I 二叉搜索树的最近公共祖先
-- [ ] 剑指 Offer 68 - II 二叉树的最近公共祖先
+- [x] 剑指 Offer 68 - I [二叉搜索树的最近公共祖先](剑指Offer/剑指Offer68-I二叉搜索树的最近公共祖先.java)
+- [x] 剑指 Offer 68 - II [二叉树的最近公共祖先](剑指Offer/剑指Offer68-II二叉树的最近公共祖先.java)
 
 ### Java刷题计划
 
@@ -167,10 +167,15 @@
 
 |                             名称                             |    排名     | 得分 | 完成时间 | 完成题目 |  比赛日期  |
 | :----------------------------------------------------------: | :---------: | :--: | :------: | :------: | :--------: |
+| [第 200 场周赛](https://leetcode-cn.com/contest/weekly-contest-200/) | 3684 / 5475 |  3   | 1:04:25  |    1     | 2020-08-02 |
+| [第 32 场双周赛](https://leetcode-cn.com/contest/biweekly-contest-32/) | 2252 / 2957 |  0   | 0:00:00  |    0     | 2020-08-08 |
+| [第 201 场周赛](https://leetcode-cn.com/contest/weekly-contest-201/) | 3312 / 5614 |  3   | 0:57:19  |    1     | 2020-08-09 |
+| [第 215 场周赛](https://leetcode-cn.com/contest/weekly-contest-215/) | 3398 / 4428 |  0   | 0:00:00  |   违规   | 2020-11-15 |
 | [第 44 场双周赛](https://leetcode-cn.com/contest/biweekly-contest-44/) | 1177 / 1826 |  3   | 0:19:42  |    1     | 2021-01-23 |
 | [第 225 场周赛](https://leetcode-cn.com/contest/weekly-contest-225/) | 2344 / 3852 |  3   | 0:38:37  |    1     | 2021-01-24 |
 | [第 226 场周赛](https://leetcode-cn.com/contest/weekly-contest-226/) | 1880 / 4033 |  3   | 0:11:08  |    1     | 2021-01-31 |
 | [第 45 场双周赛](https://leetcode-cn.com/contest/biweekly-contest-45) | 1099 / 1668 |  3   | 0:21:42  |    1     | 2021-02-06 |
+
 
 
 
