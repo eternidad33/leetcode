@@ -9,28 +9,14 @@ public class 任意子数组和的绝对值的最大值 {
         if (nums == null) {
             return 0;
         }
-        int[] dp = new int[nums.length];
-        dp[0] = nums[0];
-        int res = Math.abs(nums[0]);
-        System.out.print(dp[0] + " ");
-        for (int i = 1; i < nums.length; i++) {
-            //计算当前值与前一个dp的和
-            int a = nums[i] + dp[i - 1];
-            int b = nums[i];
-            dp[i] = Math.abs(a) > Math.abs(b) ? a : b;
-            if (nums[i - 1] > 0 && nums[i] > 0) {
-                int c = nums[i - 1] + nums[i];
-                dp[i] = Math.abs(dp[i]) > Math.abs(c) ? dp[i] : c;
-            }
-            if (nums[i - 1] < 0 && nums[i] < 0) {
-                int c = nums[i - 1] + nums[i];
-                dp[i] = Math.abs(dp[i]) > Math.abs(c) ? dp[i] : c;
-            }
-
-            res = Math.max(res, Math.abs(dp[i]));
-            System.out.print(dp[i] + "\t");
+        int max = 0, min = 0;
+        int res = 0;
+        for (int i = 0; i < nums.length; i++) {
+            max = max >= 0 ? max + nums[i] : nums[i];
+            min = min <= 0 ? min + nums[i] : nums[i];
+            res = Math.max(res, Math.abs(max));
+            res = Math.max(res, Math.abs(min));
         }
-        System.out.println();
         return res;
     }
 
