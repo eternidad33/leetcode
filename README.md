@@ -58,8 +58,8 @@
 - [x] 剑指 Offer 40 [最小的k个数](剑指Offer/剑指Offer40最小的k个数.java)
 - [x] 剑指 Offer 41 [数据流中的中位数](剑指Offer/剑指Offer41数据流中的中位数.java)
 - [x] 剑指 Offer 42 [连续子数组的最大和](剑指Offer/剑指Offer42连续子数组的最大和.java)
-- [ ] 剑指 Offer 43 1～n 整数中 1 出现的次数
-- [ ] 剑指 Offer 44 数字序列中某一位的数字
+- [x] 剑指 Offer 43 [1～n 整数中 1 出现的次数](剑指Offer/剑指Offer431～n整数中1出现的次数.java)
+- [x] 剑指 Offer 44 [数字序列中某一位的数字](剑指Offer/剑指Offer44数字序列中某一位的数字.java)
 - [ ] 剑指 Offer 45 把数组排成最小的数
 - [ ] 剑指 Offer 46 把数字翻译成字符串
 - [ ] 剑指 Offer 47 礼物的最大价值
