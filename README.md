@@ -176,6 +176,7 @@
 | [第 226 场周赛](https://leetcode-cn.com/contest/weekly-contest-226/) | 1880 / 4033 |  3   | 0:11:08  |    1     | 2021-01-31 |
 | [第 45 场双周赛](https://leetcode-cn.com/contest/biweekly-contest-45) | 1099 / 1668 |  3   | 0:21:42  |    1     | 2021-02-06 |
 | [第 227 场周赛](https://leetcode-cn.com/contest/weekly-contest-227/) | 2292 / 3545 |  3   | 1:00:08  |    1     | 2021-02-07 |
+| [第 228 场周赛](https://leetcode-cn.com/contest/weekly-contest-228/) | 1372 / 2483 |  3   | 0:17:45  |    1     | 2021-02-14 |
 
 
 
