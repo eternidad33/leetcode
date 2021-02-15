@@ -60,10 +60,10 @@
 - [x] 剑指 Offer 42 [连续子数组的最大和](剑指Offer/剑指Offer42连续子数组的最大和.java)
 - [x] 剑指 Offer 43 [1～n 整数中 1 出现的次数](剑指Offer/剑指Offer431～n整数中1出现的次数.java)
 - [x] 剑指 Offer 44 [数字序列中某一位的数字](剑指Offer/剑指Offer44数字序列中某一位的数字.java)
-- [ ] 剑指 Offer 45 把数组排成最小的数
-- [ ] 剑指 Offer 46 把数字翻译成字符串
-- [ ] 剑指 Offer 47 礼物的最大价值
-- [ ] 剑指 Offer 48 最长不含重复字符的子字符串
+- [x] 剑指 Offer 45 [把数组排成最小的数](剑指Offer/剑指Offer45把数组排成最小的数.java)
+- [x] 剑指 Offer 46 [把数字翻译成字符串](剑指Offer/剑指Offer46把数字翻译成字符串.java)
+- [x] 剑指 Offer 47 [礼物的最大价值](剑指Offer/剑指Offer47礼物的最大价值.java)
+- [x] 剑指 Offer 48 [最长不含重复字符的子字符串](剑指Offer/剑指Offer48最长不含重复字符的子字符串.java)
 - [ ] 剑指 Offer 49 丑数
 - [x] 剑指 Offer 50 [第一个只出现一次的字符](剑指Offer/剑指Offer50第一个只出现一次的字符.java)
 - [ ] 剑指 Offer 51 数组中的逆序对
