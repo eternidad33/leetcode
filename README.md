@@ -64,24 +64,24 @@
 - [x] 剑指 Offer 46 [把数字翻译成字符串](剑指Offer/剑指Offer46把数字翻译成字符串.java)
 - [x] 剑指 Offer 47 [礼物的最大价值](剑指Offer/剑指Offer47礼物的最大价值.java)
 - [x] 剑指 Offer 48 [最长不含重复字符的子字符串](剑指Offer/剑指Offer48最长不含重复字符的子字符串.java)
-- [ ] 剑指 Offer 49 丑数
+- [x] 剑指 Offer 49 [丑数](剑指Offer/剑指Offer49丑数.java)
 - [x] 剑指 Offer 50 [第一个只出现一次的字符](剑指Offer/剑指Offer50第一个只出现一次的字符.java)
-- [ ] 剑指 Offer 51 数组中的逆序对
+- [x] 剑指 Offer 51 [数组中的逆序对](剑指Offer/剑指Offer51数组中的逆序对.java)
 - [x] 剑指 Offer 52 [两个链表的第一个公共节点](剑指Offer/剑指Offer52两个链表的第一个公共节点.java)
 - [x] 剑指 Offer 53 - I [在排序数组中查找数字 I](剑指Offer/剑指Offer53-I在排序数组中查找数字I.java)
 - [x] 剑指 Offer 53 - II [0～n-1中缺失的数字](剑指Offer/剑指Offer53-II0～n-1中缺失的数字.java)
 - [x] 剑指 Offer 54 [二叉搜索树的第k大节点](剑指Offer/剑指Offer54二叉搜索树的第k大节点.java)
 - [x] 剑指 Offer 55 - I [二叉树的深度](剑指Offer/剑指Offer55-I二叉树的深度.java)
 - [x] 剑指 Offer 55 - II [平衡二叉树](剑指Offer/剑指Offer55-II平衡二叉树.java)
-- [ ] 剑指 Offer 56 - I 数组中数字出现的次数
-- [ ] 剑指 Offer 56 - II 数组中数字出现的次数 II
+- [x] 剑指 Offer 56 - I [数组中数字出现的次数](剑指Offer/剑指Offer56-I数组中数字出现的次数.java)
+- [x] 剑指 Offer 56 - II [数组中数字出现的次数 II](剑指Offer/剑指Offer56-II数组中数字出现的次数II.java)
 - [x] 剑指 Offer 57 [和为s的两个数字](剑指Offer/剑指Offer57和为s的两个数字.java)
 - [x] 剑指 Offer 57 - II [和为s的连续正数序列](剑指Offer/剑指Offer57-II和为s的连续正数序列.java)
 - [x] 剑指 Offer 58 - I [翻转单词顺序](剑指Offer/剑指Offer58-I翻转单词顺序.java)
 - [x] 剑指 Offer 58 - II [左旋转字符串](剑指Offer/剑指Offer58-II左旋转字符串.java)
 - [x] 剑指 Offer 59 - I [滑动窗口的最大值](剑指Offer/剑指Offer59-I滑动窗口的最大值.java)
-- [ ] 剑指 Offer 59 - II 队列的最大值
-- [ ] 剑指 Offer 60 n个骰子的点数
+- [x] 剑指 Offer 59 - II [队列的最大值](剑指Offer/剑指Offer59-II队列的最大值.java)
+- [x] 剑指 Offer 60 [n个骰子的点数](剑指Offer/剑指Offer60n个骰子的点数.java)
 - [x] 剑指 Offer 61 [扑克牌中的顺子](剑指Offer/剑指Offer61扑克牌中的顺子.java)
 - [x] 剑指 Offer 62 [圆圈中最后剩下的数字](剑指Offer/剑指Offer62圆圈中最后剩下的数字.java)
 - [ ] 剑指 Offer 63 股票的最大利润
