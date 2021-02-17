@@ -84,11 +84,11 @@
 - [x] 剑指 Offer 60 [n个骰子的点数](剑指Offer/剑指Offer60n个骰子的点数.java)
 - [x] 剑指 Offer 61 [扑克牌中的顺子](剑指Offer/剑指Offer61扑克牌中的顺子.java)
 - [x] 剑指 Offer 62 [圆圈中最后剩下的数字](剑指Offer/剑指Offer62圆圈中最后剩下的数字.java)
-- [ ] 剑指 Offer 63 股票的最大利润
-- [ ] 剑指 Offer 64 求1+2+…+n
+- [x] 剑指 Offer 63 [股票的最大利润](剑指Offer/剑指Offer63股票的最大利润.java)
+- [x] 剑指 Offer 64 [求1+2+…+n](剑指Offer/剑指Offer64求1+2+…+n.java)
 - [x] 剑指 Offer 65 [不用加减乘除做加法](剑指Offer/剑指Offer65不用加减乘除做加法.java)
-- [ ] 剑指 Offer 66 构建乘积数组
-- [ ] 剑指 Offer 67 把字符串转换成整数
+- [x] 剑指 Offer 66 [构建乘积数组](剑指Offer/剑指Offer66构建乘积数组.java)
+- [x] 剑指 Offer 67 [把字符串转换成整数](剑指Offer/剑指Offer67把字符串转换成整数.java)
 - [x] 剑指 Offer 68 - I [二叉搜索树的最近公共祖先](剑指Offer/剑指Offer68-I二叉搜索树的最近公共祖先.java)
 - [x] 剑指 Offer 68 - II [二叉树的最近公共祖先](剑指Offer/剑指Offer68-II二叉树的最近公共祖先.java)
 
