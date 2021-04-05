@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def purchasePlans1(self, nums: List[int], target: int) -> int:
+    def purchasePlans(self, nums: List[int], target: int) -> int:
         if not nums or len(nums) == 0:
             return 0
         count = 0
