@@ -7,5 +7,4 @@
 
 - 🌴 本仓库用于记录 leetcode 刷题
 - 👋 [leetcode 个人主页](https://leetcode-cn.com/u/eternidad/) ，欢迎关注
-- 🎇 一起刷题，共同进步
 
