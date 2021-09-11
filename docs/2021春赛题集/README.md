@@ -64,60 +64,43 @@ def purchasePlans(nums, target):
 
 ![题目描述](img/LCP29.jpg)
 
-#### 方法一：模拟查找
-
-参考[题解](https://leetcode-cn.com/problems/SNJvJP/solution/san-ju-hua-rang-li-kou-wei-wo-bao-long18-2nsi/)
-
-```python
-def orchestraLayout(num: int, xPos: int, yPos: int):
-    # 先确定这个位置在第几圈, circle从0开始计数，即第“一”圈为circle == 0
-    circle = min(xPos, yPos, num - 1 - xPos, num - 1 - yPos)
-    # 记录第circle圈的边长，边长为正方形边长 - 1，每圈过后边长减2
-    l = num - 1 - 2 * circle
-    count = num * num - (l + 1) * (l + 1)
-
-    if xPos == circle and yPos < num - 1 - circle:
-        # 上边
-        count += yPos - circle + 1
-    elif yPos == num - 1 - circle and xPos < num - 1 - circle:
-        # 右边
-        count += l + xPos - circle + 1
-    elif xPos == num - 1 - circle and yPos > circle:
-        # 下边
-        count += 2 * l + num - circle - yPos
-    else:
-        count += 3 * l + num - circle - xPos
-
-    return 9 if count % 9 == 0 else count % 9
-```
-
 ## LCP 30. 魔塔游戏
 
 ![](img/LCP30.jpg)
 
-方法一：堆排序
+#### 方法一：堆排序（优先队列）
 
-[题解](https://leetcode-cn.com/problems/p0NxJO/solution/lcp-30-mo-ta-you-xi-biao-zhun-de-xiao-ge-4gkk/)
+参考[题解](https://leetcode-cn.com/problems/p0NxJO/solution/lcp-30-mo-ta-you-xi-biao-zhun-de-xiao-ge-4gkk/)，利用堆排序
+
+1. 首先计算数组和是否为负数
+2. 逐个遍历，计算血量，碰到负数放入小根堆中
+3. 当血量是负数的时候，将小根堆中最小的数（也就是扣血最多的数）移动到最后（也就是从堆中移出），同时更新`count`和`blood`
 
 ```python
-import heapq
+def magicTower(nums):
+    """
+    先遍历计算最后和是否为负数，负数直接返回
+    堆排序：将怪物房间存放进小根堆，数越小扣血越多
+    :param nums: 房间存放的是怪物（负数），补血（正数）
+    :return: 需移动次数
+    """
+    if sum(nums) < 0:
+        return -1
+    count = 0  # 移动次数
+    hurts = list()  # 扣血的房间
+    blood = 0  # 存储当前血量
+    heapq.heapify(hurts)
+    for num in nums:
+        blood += num
+        if num < 0:
+            """房间值为负数，放入堆中"""
+            heapq.heappush(hurts, num)
+        if blood < 0:
+            """当前血量小于0，将堆中扣血最多的数也就是最小负数移动到后边，同时count+1"""
+            count += 1
+            blood -= heapq.heappop(hurts)
 
-class Solution:
-    def magicTower(self, nums):
-        if sum(nums) < 0: 
-            return -1
-        hurts = []
-        blood = 0
-        counts = 0
-        heapq.heapify(hurts)
-        for i in nums:
-            blood += i
-            if i < 0:
-                heapq.heappush(hurts, i)   
-            if blood < 0:
-                counts += 1
-                blood -= heapq.heappop(hurts)
-        return counts
+    return count
 ```
 
 ## LCP 31. 变换的迷宫
@@ -162,76 +145,6 @@ class Solution:
 - `1 <= maze[i].length, maze[i][j].length <= 50`
 - `maze[i][j]` 仅包含 `"."`、`"#"`
 
-#### 方法一：双向bfs
-
-[题解](https://leetcode-cn.com/problems/Db3wC1/solution/python3-shuang-xiang-bfsmei-hao-de-shuan-e2ea/)
-
-```python
-class Solution:
-    def escapeMaze(self, maze: List[List[str]]) -> bool:
-        time = len(maze)
-        n, m = len(maze[0]), len(maze[0][0])
-        if n + m - 2 > time:
-            return False
-        best = [[[[float('inf'), -1] for i in range(2)] for k in range(m)] for j in range(n)]
-        record = [[[[float('inf')] * 2 for k in range(m)]
-                   for j in range(n)] for i in range(time)]
-        best[0][0][0][0] = 0
-        best[n - 1][m - 1][0][1] = time - 1
-        record[0][0][0][0] = int(maze[0][0][0] == '#')
-        record[time - 1][n - 1][m - 1][1] = int(maze[time - 1][n - 1][m - 1] == '#')
-        road = [(0, 0), (0, 1), (1, 0), (0, -1), (-1, 0)]
-        z1 = [(0, 0, 0)]
-        z2 = [(time - 1, n - 1, m - 1)]
-        i, j = 0, 0
-
-        while i < len(z1) or j < len(z2):
-            if i < len(z1):
-                t, x, y = z1[i]
-                if t < time:
-                    for a, b in road:
-                        o, p = x + a, y + b
-                        if -1 < o < n and -1 < p < m and n + m - o - p <= time - t:
-                            if not record[t][x][y][0] and max(best[o][p][0][1], best[o][p][1][1]) > t:
-                                return True
-                            if record[t][x][y][0] and best[o][p][0][1] > t:
-                                return True
-                            if maze[t + 1][o][p] == '#':
-                                if not record[t][x][y][0] and record[t + 1][o][p][0] > 1:
-                                    record[t + 1][o][p][0] = 1
-                                    z1.append((t + 1, o, p))
-                                    best[o][p][0][0] = min(best[o][p][0][0], t + 1)
-                            else:
-                                if record[t + 1][o][p][0] > record[t][x][y][0]:
-                                    now = record[t][x][y][0]
-                                    record[t + 1][o][p][0] = now
-                                    z1.append((t + 1, o, p))
-                                    best[o][p][now][0] = min(best[o][p][now][0], t + 1)
-            i += 1
-            if j < len(z2):
-                t, x, y = z2[j]
-                if t:
-                    for a, b in road:
-                        o, p = x + a, y + b
-                        if -1 < o < n and -1 < p < m and o + p <= t - 1:
-                            if not record[t][x][y][1] and min(best[o][p][0][0], best[o][p][1][0]) < t:
-                                return True
-                            if record[t][x][y][1] and best[o][p][0][0] < t:
-                                return True
-                            if maze[t - 1][o][p] == '#':
-                                if not record[t][x][y][1] and record[t - 1][o][p][1] > 1:
-                                    record[t - 1][o][p][1] = 1
-                                    z2.append((t - 1, o, p))
-                                    best[o][p][0][1] = max(best[o][p][0][1], t - 1)
-                            else:
-                                if record[t - 1][o][p][1] > record[t][x][y][1]:
-                                    now = record[t][x][y][1]
-                                    record[t - 1][o][p][1] = now
-                                    z2.append((t - 1, o, p))
-                                    best[o][p][now][1] = max(best[o][p][now][1], t - 1)
-            j += 1
-        return False
-```
 ## LCP 33. 蓄水
 
 给定 N 个无限容量且初始均空的水缸，每个水缸配有一个水桶用来打水，第 `i` 个水缸配备的水桶容量记作 `bucket[i]`。小扣有以下两种操作：
@@ -264,33 +177,6 @@ class Solution:
 **提示：**
 - `1 <= bucket.length == vat.length <= 100`
 - `0 <= bucket[i], vat[i] <= 10^4`
-
-[题解](https://leetcode-cn.com/problems/o8SXZn/solution/can-kao-da-lao-de-ti-jie-bao-li-jie-fa-b-1xcs/)
-
-```java
-class Solution {
-    public int storeWater(int[] bucket, int[] vat) {
-        int max = 0;
-        for(int v:vat)
-            if(max < v) max = v;
-        if(max == 0) return 0;
-        int n = bucket.length;
-        int ans = Integer.MAX_VALUE;
-        for(int i = 1; i <= 10000; i++) {//遍历倒水次数
-            int per = 0;
-            int cur = i;//倒水i次，所以操作次数+i
-            for(int j = 0; j < n; j++) {//遍历每个水缸
-                per = (vat[j] + i - 1) / i;// 水槽容量/倒水次数=每次倒水量
-//+（i - 1）目的是为了向上取整(除完后如果有余数，加上i-1之后就一定会多商1，从而达到向上取整的功能)
-//使用vat[j]%i==0 ? vat[j]/i : vat[j]/i+1 代替也行，但是更慢
-                cur += Math.max(0, per - bucket[j]);// 每次倒水量-初始水量=需要升级次数
-            }
-            ans = Math.min(ans, cur);//所有倒水次数中，取最小的操作次数
-        }
-        return ans;
-    }
-}
-```
 
 ## LCP 32. 批量处理任务
 
@@ -327,60 +213,6 @@ class Solution {
 - `tasks[i].length == 3`
 - `0 <= tasks[i][0] <= tasks[i][1] <= 10^9`
 - `1 <= tasks[i][2] <= tasks[i][1]-tasks[i][0] + 1`
-
-[题解](https://leetcode-cn.com/problems/t3fKg1/solution/you-xian-dui-lie-tan-xin-rust-by-lucifer-4spv/)
-
-```python
-from heapq import heapify, heappush, heappop
-
-class Solution:
-    def processTasks(self, tasks: List[List[int]]) -> int:
-        n = len(tasks)
-        ts = set()
-        for s, e, _ in tasks:
-            ts.add(s)
-            ts.add(e + 1)
-
-        vt = sorted(list(ts))
-        mp = dict()
-        for i, t in enumerate(vt):
-            mp[t] = i
-
-        m = len(vt)
-        starts = [[] for _ in range(m)]
-        for i, task in enumerate(tasks):
-            starts[mp[task[0]]].append(i)
-        
-        ans = 0
-        extra = 0 # 关键变量，用于修正优先队列内的数值
-        pq = []
-        heapify(pq)
-
-        for i in range(m - 1):
-            while pq and tasks[pq[0][1]][1] < vt[i]:
-                heappop(pq)
-            
-            for u in starts[i]:
-                heappush(pq, (extra + tasks[u][1] - vt[i] + 1 - tasks[u][2], u))
-
-            current_seg = vt[i + 1] - vt[i]
-
-            if pq:
-                # 减去extra得到实际的空余槽位数目。
-                min_slots = pq[0][0] - extra
-                slots_to_del = current_seg
-
-                # 如果空余槽位最少的那个任务的空余槽位小于当前区间的长度，则当前区间需要安排任务。
-                if min_slots < current_seg:
-                    delta = current_seg - min_slots
-                    ans += delta
-                    slots_to_del -= delta
-
-                # 需要减少当前队列内的任务的空余槽位，这里显然不能逐个修改，所以变为增加之后入队的任务的数值。
-                extra += slots_to_del
-
-        return ans
-```
 
 ## LCP 34. 二叉树染色
 
