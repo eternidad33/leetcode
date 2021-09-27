@@ -1,6 +1,6 @@
 ## LCP 28. 采购方案
 
-![题目描述](img/LCP28.png)
+![LCP28](https://cdn.jsdelivr.net/gh/eternidad33/picbed/img/20210927205736.png)
 
 #### 方法一：暴力（超时）
 
@@ -62,11 +62,11 @@ def purchasePlans(nums, target):
 
 ## LCP 29. 乐团站位
 
-![题目描述](img/LCP29.jpg)
+![LCP29](https://cdn.jsdelivr.net/gh/eternidad33/picbed/img/20210927205758.jpg)
 
 ## LCP 30. 魔塔游戏
 
-![](img/LCP30.jpg)
+![LCP30](https://cdn.jsdelivr.net/gh/eternidad33/picbed/img/20210927205819.jpg)
 
 #### 方法一：堆排序（优先队列）
 
