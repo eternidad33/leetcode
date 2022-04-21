@@ -1,6 +1,5 @@
 <p align='center'>
 <a href='https://gitee.com/eternidad33/leetcode'><img src='https://gitee.com/eternidad33/leetcode/widgets/widget_6.svg' alt='Fork me on Gitee'></img></a></p>
-
 # LeetCode 刷题
 
 - 🌴 本仓库用于记录 leetcode 刷题
@@ -31,8 +30,5 @@
         </td>
     </tr>
 </table>
-
-
-
-
+- [ ] 2022.4.21 计划用C++刷题，先刷[热题Hot100](https://leetcode-cn.com/problem-list/2cktkvj/)
 
