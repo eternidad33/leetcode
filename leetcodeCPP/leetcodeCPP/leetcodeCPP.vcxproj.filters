@@ -13,10 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\hot100">
+      <UniqueIdentifier>{6213077b-3ba4-413d-a9e2-22bbe77fac40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\竞赛">
+      <UniqueIdentifier>{999d78e7-0383-4125-87ea-5f743f7daec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\虚拟竞赛">
+      <UniqueIdentifier>{ed4c4448-b282-42b2-8839-0fcc2807b31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\练习">
+      <UniqueIdentifier>{4ab587c1-fedb-4e0f-9a45-4969b550763a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\竞赛\第85场双周赛">
+      <UniqueIdentifier>{999edc30-5cfd-4875-80d5-b46622c9cc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\竞赛\第307场周赛">
+      <UniqueIdentifier>{527f84bf-0983-47b4-9f4f-184daeab5cdc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="无重复字符的最长子串.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\hot100</Filter>
+    </ClCompile>
+    <ClCompile Include="得到 K 个黑块的最少涂色次数.cpp">
+      <Filter>源文件\竞赛\第85场双周赛</Filter>
+    </ClCompile>
+    <ClCompile Include="赢得比赛需要的最少训练时长.cpp">
+      <Filter>源文件\竞赛\第307场周赛</Filter>
+    </ClCompile>
+    <ClCompile Include="字母移位 II.cpp">
+      <Filter>源文件\竞赛\第85场双周赛</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
